@@ -1,0 +1,146 @@
+/******* Topic-card *******/
+.photo-menu {
+    display: -ms-grid;
+    display:     grid;
+
+    padding: 0;
+
+    -ms-grid-columns: (2fr)[2];
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 10px;
+}
+
+.photo-menu__card {
+    position: relative;
+
+    overflow: hidden;
+
+    width: 100%;
+    height: 300px;
+    margin: 0;
+
+    -ms-grid-column-span: 2;
+    grid-column-end: span 2;
+}
+
+
+
+.photo-menu__card-img {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    -webkit-transition: all .3s ease;
+            transition: all .3s ease;
+
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+
+
+.photo-menu__card-box-title {
+    position: absolute;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        flex-direction: column;
+
+    width: 200px;
+    margin: 15px;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+}
+
+.photo-menu__card-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    font-weight: 100;
+    line-height: 50px;
+
+    overflow: hidden;
+
+    height: 100%;
+    padding: 0;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #000;
+    background-color: rgba(255, 255, 255, .9);
+
+    mix-blend-mode: lighten;
+}
+
+/*
+.photo-menu__card-title h3 {
+    font-weight: 600;
+  }
+*/
+.photo-menu__card:hover .photo-menu__card-img {
+    -webkit-transform: scale(1.25);
+            transform: scale(1.25);
+}
+
+/**/
+/*@media screen and (max-width: 640px) {
+
+  .photo-menu__card {
+
+            -ms-grid-column-span: 1;
+            grid-column-end: span 1;
+}
+    .photo-menu__card:nth-child(1) {
+        -ms-grid-column-span: 2;
+        grid-column-end: span 2;
+    }
+    
+}
+*/
+
+@media screen and (min-width:480px)  {
+    .photo-menu__card-box-title {
+        width: 220px;
+    }
+
+    .photo-menu__card-title {
+        font-size: 22px;
+    }
+  }
+
+@media screen and (min-width: 640px) {
+    .photo-menu__card {
+        -ms-grid-column-span: 1;
+        grid-column-end: span 1;
+    }
+
+    .photo-menu__card:nth-child(1) {
+        -ms-grid-column-span: 2;
+        grid-column-end: span 2;
+    }
+
+    .photo-menu__card-box-title {
+        width: 250px;
+    }
+
+    .photo-menu__card-title {
+        font-size: 26px;
+    }
+}
+
+
+
+
+/*
+@media screen and (min-width: 800px) {
+    .photo-menu__card {
+        -ms-grid-column-span: 2;
+        grid-column-end: span 2;
+    }
+}
+*/
