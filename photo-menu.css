@@ -1,4 +1,3 @@
-/******* Topic-card *******/
 .photo-menu {
     display: -ms-grid;
     display:     grid;
@@ -77,11 +76,7 @@
     mix-blend-mode: lighten;
 }
 
-/*
-.photo-menu__card-title h3 {
-    font-weight: 600;
-  }
-*/
+
 .photo-menu__card:hover .photo-menu__card-img {
     -webkit-transform: scale(1.25);
             transform: scale(1.25);
@@ -103,7 +98,7 @@
 }
 */
 
-@media screen and (min-width:480px)  {
+@media screen and (min-width:480px) {
     .photo-menu__card-box-title {
         width: 220px;
     }
@@ -111,7 +106,7 @@
     .photo-menu__card-title {
         font-size: 22px;
     }
-  }
+}
 
 @media screen and (min-width: 640px) {
     .photo-menu__card {
